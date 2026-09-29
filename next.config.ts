@@ -1,7 +1,8 @@
 import type {NextConfig} from 'next';
 
-// Only apply basePath when building in GitHub Actions or when explicitly set
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || (process.env.GITHUB_ACTIONS === 'true' ? '/DRILLDEX' : '');
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
+const isProd = process.env.NODE_ENV === 'production';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || (isGithubActions || isProd ? '/DRILLDEX' : '');
 
 const nextConfig: NextConfig = {
   output: 'export',
