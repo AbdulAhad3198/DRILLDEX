@@ -1,0 +1,6 @@
+{
+  "name": "DRILLDEX | eRTMAC-NWIS",
+  "description": "AI-Powered Offset Well Knowledge and Decision Support Platform for Drilling Operations (SIH 2026 - Problem Statement 26121).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
